@@ -1,0 +1,13 @@
+.main-panel {
+   -fx-background-color: grey;
+}
+
+#footer-box {
+   -fx-padding: 10 10 10 10;
+   -fx-background-color: #505050;
+}
+
+.openBtn {
+   -fx-font-size: 16px;
+   -fx-font-family: sans-serif;
+}

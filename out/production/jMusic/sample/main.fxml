@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane fx:controller="sample.Controller" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+   <center>
+      <VBox style="-fx-background-color:grey"></VBox>
+   </center>
+   <bottom>
+      <VBox id="footer-box">
+         <Button text="click me!" AnchorPane.leftAnchor="10.0" AnchorPane.bottomAnchor="10.0" styleClass="openBtn" />
+      </VBox>
+   </bottom>
+</BorderPane>
