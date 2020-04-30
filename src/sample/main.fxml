@@ -2,14 +2,33 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
 
-<BorderPane fx:controller="sample.Controller" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: #414141;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.Controller">
    <center>
-      <VBox style="-fx-background-color:grey"></VBox>
+      <HBox alignment="CENTER" minHeight="200.0" minWidth="400.0" prefHeight="300.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <Button id="backButton" mnemonicParsing="false" scaleX="1.6" scaleY="1.6" style="-fx-background-color: #414141;" translateX="-70.0" onMouseClicked="#lastSong">
+            <graphic>
+               <SVGPath content="M6 6h2v12H6zm3.5 6l8.5 6V6zM6 6h2v12H6zm3.5 6l8.5 6V6z" fill="#63bfdd" scaleX="2.0" scaleY="2.0" />
+            </graphic>
+         </Button>
+         <Button id="playButton" mnemonicParsing="false" scaleX="3.0" scaleY="3.0" style="-fx-background-color: #414141;" onMouseClicked="#playSong">
+            <graphic>
+               <SVGPath content="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#63bfdd" scaleX="1.6" scaleY="1.6" />
+            </graphic>
+         </Button>
+         <Button id="forwardButton" mnemonicParsing="false" scaleX="1.6" scaleY="1.6" style="-fx-background-color: #414141;" translateX="70.0" onMouseClicked="#nextSong">
+            <graphic>
+               <SVGPath content="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2zM6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" fill="#63bfdd" scaleX="2.0" scaleY="2.0" />
+            </graphic>
+         </Button>
+      </HBox>
    </center>
    <bottom>
-      <VBox id="footer-box">
-         <Button text="click me!" AnchorPane.leftAnchor="10.0" AnchorPane.bottomAnchor="10.0" styleClass="openBtn" />
-      </VBox>
+      <AnchorPane prefHeight="34.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <Label prefHeight="34.0" prefWidth="78.0" text="Now Playing" textFill="#63bfdd" AnchorPane.leftAnchor="10.0" />
+         <Label prefHeight="33.0" prefWidth="31.0" text="Time" textAlignment="RIGHT" textFill="#63bfdd" textOverrun="WORD_ELLIPSIS" AnchorPane.rightAnchor="10.0" />
+      </AnchorPane>
    </bottom>
 </BorderPane>

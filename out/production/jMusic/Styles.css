@@ -7,6 +7,10 @@
    -fx-background-color: #505050;
 }
 
+.footerText {
+   -fx-text-fill: white;
+}
+
 .openBtn {
    -fx-font-size: 16px;
    -fx-font-family: sans-serif;
